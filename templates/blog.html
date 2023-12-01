@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Products</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts --> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ <!-- Vendor CSS Files -->
+<link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<script>
+        function subscribed()
+        {
+        var email = document.getElementsByName('email')[0].value;
+        if(email){
+            alert(email +" is subscribed for Updates!")
+            document.getElementById('subscription-form').submit();
+        }
+        else{
+        alert("Enter Valid Email to subscribe!")
+            document.getElementById('subscription-form').submit();}
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">K-On<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="{{ url_for('home') }}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('home') }}">Services</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('home') }}">Team</a></li>
+          <li><a href="{{ url_for('product') }}" class="nav-link scrollto active">Products</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('home') }}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="{{ url_for('home')}}" class="get-started-btn scrollto">Get Started</a>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Products</li>
+        </ol>
+        <h2>Products</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+    <!-- ======= Portfolio Section =======-->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Products</h2>
+          <p>Discover our exquisite range of products, meticulously crafted to blend style, functionality, and quality. From cutting-edge technology to timeless design, each product is a testament to our commitment to delivering an unparalleled experience.
+            Explore a world of innovation and sophistication with K-On's exceptional products</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Switches</li>
+              <li data-filter=".filter-card">LED Bulbs</li>
+              <li data-filter=".filter-web">Flood Lite</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-8.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-3.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-4.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-7.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-5.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-6.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Switch-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Switch</h4>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/LED-2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>LED bulb</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/LED-3.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>LED bulb</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/LED-4.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>LED bulb</h4>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/LED-5.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>LED bulb</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/LED-6.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>LED bulb</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/LED-3.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>LED bulb</h4>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-3.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-4.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-5.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-4.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-6.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-7.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/Flood-8.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flood Lite</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> <!-- End Portfolio Section -->
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Presento<span>.</span></h3>
+            <p>
+              Raiwand Road <br>
+              Lahore<br>
+              Pakistan <br><br>
+              <strong>Phone:</strong> +92 309 6614579<br>
+              <strong>Email:</strong> deebaumar02@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ url_for('home') }}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ url_for('product') }}">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Selection and Sales</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Custom Electrical Solutions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Consultation and Design Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Bulk Purchase</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Corporate Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Our team is here to assist you with expert advice and tailored solutions that suit your needs.</p>
+            <form id="subscription-form" action="/subscribe" method="post">
+              <input type="email" name="email">
+              <input type="submit" value="Subscribe">
+              <button type="button" onclick="subscribed()">Subscribe</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>K-On.</span></strong>All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+          Designed by <a href="https://www.instagram.com/nosedeepinbooks/?hl=en">Deeba Umar Farooq </a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+  </main>
+</body>
+
+</html>
